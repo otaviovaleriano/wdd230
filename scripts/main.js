@@ -4,8 +4,8 @@ console.log(date)
 let year = date.getFullYear();
 console.log(year)
 
-document.querySelector('h1').innerHTML = `&copy ${year}`;
+document.querySelector('h3').innerHTML = `&copy ${year} .: | :. Otavio Valeriano Santos Silva .: | :. Idaho`;
 
 let currentDate = document.lastModified;
 
-document.querySelector('div').textContent = `Last Updated: ${currentDate}`;
+document.querySelector('.update').textContent = `Last Updated: ${currentDate}`;
