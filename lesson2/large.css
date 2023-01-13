@@ -1,0 +1,19 @@
+@media screen and (min-width:900px) {
+    h1 {
+        color: rgb(255, 255, 0);
+    }
+    .test {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img {
+        max-width: 370px;
+        width: 90%;
+    }
+    .extra-grid {
+        grid-column: 3/3;
+    }
+    footer {
+        grid-column: 1/4;
+        width: 100%;
+    }
+}
