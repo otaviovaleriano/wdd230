@@ -41,10 +41,15 @@ p {
 
 section {
     margin: 1em;
+    font-family: Rowdies, sans-serif;
     text-align: center;
     border: #0c1f30 3px solid;
     border-radius: 10px;
     background-color: rgba(236, 228, 228, 0.598);
+}
+
+h4 {
+    font-family: Rowdies, sans-serif;
 }
 
 img {
