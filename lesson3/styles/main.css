@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Prata&display=swap');
 nav ul {
     padding-inline-start: 0;
     width: 100%;
@@ -8,10 +9,43 @@ nav ul {
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 3px 7px 10px #888888;
+    font-family: Prata, sans-serif;
 }
 
-h1 {
+nav {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    /* Position the navbar at the top of the page */
+    overflow: hidden;
+    width: 75%;
+    padding-left: 30px;
+    margin-top: -65px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Prata, sans-serif;
+    padding: 20px;
     color: #0090C1;
+}
+
+ol,
+li,
+li::marker {
+    text-align: left;
+    font-family: Hind Vadodara, sans-serif;
+}
+
+h5 {
+    font-family: Prata, sans-serif;
+    color: #0090C1;
+}
+
+p,
+.text {
+    font-family: Hind Vadodara, sans-serif;
 }
 
 nav li {
@@ -20,17 +54,17 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #A2E8DD;
+    color: #0C0909;
     font-size: 1.5em;
     text-align: center;
 }
 
 nav a:hover {
-    color: rgb(0, 0, 0);
+    color: #046E8F;
 }
 
 nav li:hover {
-    background-color: #cbc7c77a;
+    background-color: #A2E8DD;
 }
 
 body {
@@ -46,21 +80,73 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     border-radius: 7px;
+    margin-top: 70px !important;
 }
 
-
-/* 
-.content {
-    background-color: white;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
 }
 
-body {
-    background-color: black;
-} */
+.grid p {
+    padding: 15px;
+}
+
+.personas {
+    width: 300px;
+    height: 280px;
+}
+
+section h3 {
+    padding: 5px;
+}
+
+.primary {
+    background-color: #046E8F;
+    color: #A2E8DD;
+}
+
+.secundary {
+    background-color: #0090C1;
+    color: #A2E8DD;
+}
+
+.accent-one {
+    background-color: #A2E8DD;
+    color: #046E8F;
+}
+
+.accent-two {
+    background-color: #0C0909;
+    color: #A2E8DD;
+}
+
+.text a:hover {
+    text-decoration: none;
+    color: #A2E8DD;
+}
+
+#design,
+#typography,
+#personas,
+#purpose {
+    text-decoration-line: underline;
+}
+
+.sitemap {
+    width: 600px;
+    height: 400px;
+}
 
 @media screen and (max-width: 1000px) {
     nav a {
         font-size: 1.1em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 30px;
     }
 }
 
@@ -79,5 +165,10 @@ body {
     ol {
         margin-left: 2em;
         margin-right: 2em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 30px;
     }
 }
