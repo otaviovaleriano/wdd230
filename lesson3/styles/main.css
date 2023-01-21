@@ -12,15 +12,14 @@ nav ul {
     font-family: Prata, sans-serif;
 }
 
-nav {
+
+/* nav {
     position: fixed;
-    /* Set the navbar to fixed position */
-    /* Position the navbar at the top of the page */
     overflow: hidden;
     width: 75%;
     padding-left: 30px;
     margin-top: -65px;
-}
+} */
 
 h1,
 h2,
@@ -80,7 +79,6 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     border-radius: 7px;
-    margin-top: 70px !important;
 }
 
 .grid {
