@@ -3,7 +3,7 @@
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: repeat(1fr, 5);
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
     main .hero {
         grid-column: 1/3;

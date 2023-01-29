@@ -29,10 +29,6 @@
         padding: 0px 20px 0px 20px;
         font-family: Prata, sans-serif;
     }
-    nav a:hover {
-        background-color: none;
-        color: none;
-    }
     #rightSideHeader {
         grid-column: 3/4;
         grid-row: 1/2;
