@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Prata&display=swap');
+
+/* Set up for everything */
+
+* {
+    font-family: Prata, sans-serif;
+}
+
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    font-family: Prata, sans-serif;
+}
+
+p {
+    font-family: Hind Vadodara, sans-serif;
+}
+
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+/* General header */
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #0090C1;
+    border-radius: 1rem;
+    margin: 10px;
+    padding: 15px;
+    color: #A2E8DD;
+    font-family: Hind Vadodara, sans-serif;
+}
+
+
+/* focusing on the leftmost part of header */
+
+.logo {
+    display: flex;
+    border-right: 2px solid rgba(0, 0, 0, .3);
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+    padding-right: 1.5rem;
+}
+
+.logo p {
+    padding-top: 1.75rem;
+}
+
+header p span {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
+/* working on the right side header placement*/
+
+#iconsSideHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.socialMediaIcons {
+    grid-column: 1/2;
+}
+
+
+/* Working on social media tags */
+
+.socialMediaIcons img {
+    padding-top: 2.1rem;
+    width: 25px;
+    height: auto;
+    padding-left: 0px;
+    margin-left: 2px;
+    border: 0px;
+}
+
+
+/* working on navigational portion of right side */
+
+.ham {
+    padding-top: 2.1rem;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 2em;
+    text-decoration: none;
+    color: black;
+    font-family: Hind Vadodara, sans-serif;
+}
+
+.navContainer {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+}
+
+nav a {
+    padding: 2.5px;
+    text-decoration: none;
+    color: #A2E8DD;
+    font-family: Hind Vadodara, sans-serif;
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+/*end to nav code*/
+
+
+/* Working on final div to hold current date */
+
+header div p {
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 1.15rem;
+    margin: 0px;
+    text-align: left;
+    font-family: Hind Vadodara, sans-serif;
+}
+
+.date {
+    background-color: #046f8f7e;
+    grid-column: 1/3;
+    padding: 5px;
+    margin: 5px 5px 10px 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #A2E8DD;
+    font-family: Hind Vadodara, sans-serif;
+}
+
+
+/* working on the main grid layout */
+
+main section {
+    background-color: #eee;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+    min-height: 150px;
+}
+
+.spotlights {
+    height: 300px;
+}
+
+main section div {
+    border: 1px solid black;
+    height: 140px;
+}
+
+main section div:nth-child(1) {
+    margin: 10px 5px 0px 5px;
+}
+
+main section div:nth-child(2) {
+    margin: 0px 5px 10px 5px;
+}
+
+main section div:nth-child(3) {
+    display: none;
+}
+
+main section p {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+footer {
+    background-color: #0090C1;
+    border-radius: 1rem;
+    margin: 10px;
+    text-align: center;
+    color: #A2E8DD;
+}
+
+footer img {
+    width: 90px;
+    height: 90px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer div:nth-child(2) {
+    border-bottom: 2px solid rgba(0, 0, 0, .3);
+}
+
+footer div p {
+    margin: 0px;
+}
+
+.endFooter {
+    text-align: center;
+}
+
+#mapIcon {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
