@@ -116,6 +116,10 @@ header div p {
     font-family: Hind Vadodara, sans-serif;
 }
 
+.material-icons {
+    color: black;
+}
+
 .date {
     background-color: #046f8f7e;
     grid-column: 1/3;
