@@ -1,26 +1,3 @@
-const dateToday = document.querySelector('.date');
-const options = {
-    weekday: "long",
-    day: "2-digit",
-    month: "long",
-    year: "numeric"
-};
-
-dateToday.textContent = `${new Date().toLocaleDateString("en-US", options)}`;
-
-
-const lastModified = document.querySelector('#lastModified');
-lastModified.textContent = `Last Modification: ${document.lastModified}`
-
-
-const date = new Date();
-let year = date.getFullYear();
-console.log(year);
-
-
-document.querySelector('#currentYear').innerHTML = `&copy;${year} Londrina's Chamber of Commerce | Otavio Silva <br> WDD 230 Project `
-
-
 const hamburger = document.querySelector('.ham');
 
 let clickCounter = 1;
@@ -97,3 +74,26 @@ function reportWindowSize() {
 window.addEventListener('resize', reportWindowSize);
 
 window.addEventListener('DOMContentLoaded', reportWindowSize);
+
+
+const dateToday = document.querySelector('.date');
+const options = {
+    weekday: "long",
+    day: "2-digit",
+    month: "long",
+    year: "numeric"
+};
+
+dateToday.textContent = `${new Date().toLocaleDateString("en-US", options)}`;
+
+
+const lastModified = document.querySelector('#lastModified');
+lastModified.textContent = `Last Modification: ${document.lastModified}`
+
+
+const date = new Date();
+let year = date.getFullYear();
+console.log(year);
+
+
+document.querySelector('#currentYear').innerHTML = `&copy;${year} Londrina's Chamber of Commerce | Otavio Silva <br> WDD 230 Project `

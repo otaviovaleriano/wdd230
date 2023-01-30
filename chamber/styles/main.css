@@ -26,9 +26,6 @@ body {
     background-color: white;
 }
 
-
-/* General header */
-
 header {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -40,12 +37,8 @@ header {
     font-family: Hind Vadodara, sans-serif;
 }
 
-
-/* focusing on the leftmost part of header */
-
 .logo {
     display: flex;
-    border-right: 2px solid rgba(0, 0, 0, .3);
 }
 
 .logo img {
@@ -65,9 +58,6 @@ header p span {
     font-size: .9rem;
 }
 
-
-/* working on the right side header placement*/
-
 #iconsSideHeader {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,9 +67,6 @@ header p span {
     grid-column: 1/2;
 }
 
-
-/* Working on social media tags */
-
 .socialMediaIcons img {
     padding-top: 2.1rem;
     width: 25px;
@@ -88,9 +75,6 @@ header p span {
     margin-left: 2px;
     border: 0px;
 }
-
-
-/* working on navigational portion of right side */
 
 .ham {
     padding-top: 2.1rem;
@@ -123,12 +107,6 @@ nav a:hover {
     color: black;
 }
 
-
-/*end to nav code*/
-
-
-/* Working on final div to hold current date */
-
 header div p {
     padding-top: 1em;
     font-weight: bold;
@@ -148,9 +126,6 @@ header div p {
     color: #A2E8DD;
     font-family: Hind Vadodara, sans-serif;
 }
-
-
-/* working on the main grid layout */
 
 main section {
     background-color: #eee;
@@ -211,11 +186,4 @@ footer div p {
 
 .endFooter {
     text-align: center;
-}
-
-#mapIcon {
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
 }

@@ -30,7 +30,6 @@
         grid-column: 1/3;
         grid-row: 4/5;
     }
-    /* fixing the footer to better math the example */
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
