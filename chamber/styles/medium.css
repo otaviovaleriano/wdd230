@@ -5,6 +5,9 @@
         padding: 0px 20px 0px 20px;
         font-family: Prata, sans-serif;
     }
+    nav a:hover {
+        color: #a2e8dd;
+    }
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
