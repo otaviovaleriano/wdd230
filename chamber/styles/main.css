@@ -32,7 +32,7 @@ header {
     background-color: #0090C1;
     margin: 10px;
     padding: 15px;
-    color: #A2E8DD;
+    color: black;
     font-family: Hind Vadodara, sans-serif;
 }
 
@@ -98,7 +98,8 @@ nav {
 nav a {
     padding: 2.5px;
     text-decoration: none;
-    color: #fe9e59;
+    color: black;
+    font-size: 1rem;
     font-family: Hind Vadodara, sans-serif;
 }
 
@@ -109,7 +110,7 @@ nav a:hover {
 header div p {
     padding-top: 1em;
     font-weight: bold;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     margin: 0px;
     text-align: left;
     font-family: Hind Vadodara, sans-serif;
@@ -122,12 +123,12 @@ header div p {
     margin: 5px 5px 10px 5px;
     border-radius: 5px;
     text-align: center;
-    color: #fe9e59;
+    color: black;
     font-family: Hind Vadodara, sans-serif;
 }
 
 main section {
-    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0.575);
     border: 1px solid black;
     padding: 3px;
     margin: 5px;
@@ -164,7 +165,7 @@ footer {
     background-color: #0090C1;
     margin: 10px;
     text-align: center;
-    color: #A2E8DD;
+    color: black;
 }
 
 footer img {

@@ -1,5 +1,10 @@
 @media screen and (min-width:600px) {
-    /* fixing the main section to fit better with example layout */
+    nav a {
+        display: block;
+        font-size: 1.5rem;
+        padding: 0px 20px 0px 20px;
+        font-family: Prata, sans-serif;
+    }
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
