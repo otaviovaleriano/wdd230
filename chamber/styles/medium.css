@@ -20,11 +20,11 @@
     .hero {
         position: relative;
     }
-    .hero .joinBtn {
+    .joinBtn {
         background-color: #0090C1;
         position: absolute;
         right: 50px;
-        top: 250px;
+        bottom: 100px;
         z-index: +1;
         color: black;
         font-weight: bolder;
@@ -33,6 +33,7 @@
         font-family: Prata, sans-serif;
         font-size: large;
         cursor: pointer;
+        /* padding: 10px; */
     }
     .joinBtn:hover {
         background-color: black;

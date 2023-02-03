@@ -144,9 +144,10 @@ main section {
 }
 
 .hero img {
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    object-fit: none;
     /* padding: auto; */
     /* position: relative; */
 }
@@ -162,7 +163,7 @@ main section {
     font-family: Prata, sans-serif;
 }
 
-.hero .joinBtn {
+.joinBtn {
     background-color: #0090C1;
     position: absolute;
     right: 30px;
@@ -175,7 +176,7 @@ main section {
     font-family: Prata, sans-serif;
     cursor: pointer;
     border-radius: 20px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .joinBtn:hover {
@@ -189,7 +190,7 @@ main section {
 
 main section div {
     border: 1px solid black;
-    height: 140px;
+    /* height: 140px; */
 }
 
 main section div:nth-child(1) {
