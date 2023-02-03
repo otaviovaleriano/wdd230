@@ -20,11 +20,15 @@
     .hero {
         position: relative;
     }
+    .hero img {
+        height: 200px;
+    }
     .joinBtn {
         background-color: #0090C1;
         position: absolute;
         right: 50px;
-        bottom: 100px;
+        /* right: 30px; */
+        bottom: 50px;
         z-index: +1;
         color: black;
         font-weight: bolder;
