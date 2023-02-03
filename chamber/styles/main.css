@@ -190,7 +190,7 @@ main section {
 
 main section div {
     border: 1px solid black;
-    /* height: 140px; */
+    height: 140px;
 }
 
 main section div:nth-child(1) {
