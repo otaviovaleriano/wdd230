@@ -132,6 +132,10 @@ header div p {
     font-family: Hind Vadodara, sans-serif;
 }
 
+main section p span button {
+    font-family: Hind Vadodara, sans-serif;
+}
+
 main section {
     background-color: #25a1ca2a;
     border: 2px solid black;
@@ -186,13 +190,118 @@ main section {
     color: #a2e8dd;
 }
 
+.event {
+    text-align: center;
+    padding: 3px;
+}
+
+.event h2 {
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.259);
+}
+
+.weather h2 {
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.259);
+    grid-column: 1/3;
+}
+
+.weather {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.weather img {
+    grid-column: 1/2;
+    padding-left: 120px
+}
+
+.weather .temp {
+    grid-column: 2/3;
+    font-size: 2rem;
+    padding-right: 100px;
+}
+
+.weather-status {
+    grid-column: 1/3;
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+    margin: 0px 8px 0px 5px;
+}
+
+.windSpeed {
+    grid-column: 1/3;
+}
+
+.windChill {
+    grid-column: 1/3;
+}
+
+.windChill span,
+.windSpeed span {
+    margin-left: 30px;
+}
+
+.join {
+    text-align: center;
+    padding: 10px;
+}
+
+.join .joinBtn-2 {
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+    border-radius: 15px;
+    background-color: #0090C1;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: Prata, sans-serif;
+    font-size: 1.3rem;
+}
+
+.joinBtn-2:hover {
+    background-color: black;
+    color: #a2e8dd;
+}
+
+.join p {
+    padding: 30px;
+}
+
+.newRelease {
+    text-align: center;
+}
+
+.newRelease h2 {
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.259);
+}
+
 .spotlights {
-    height: 300px;
+    max-height: 600px;
+}
+
+.spotlights div {
+    height: auto
 }
 
 main section div {
     border: 1px solid black;
     height: 140px;
+    margin: 5px 0px 5px 0 !important;
+    text-align: center;
+    font-family: Hind Vadodara, sans-serif;
+}
+
+.slogan {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin-right: 8px;
+}
+
+main section div h2 {
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.259);
 }
 
 main section div:nth-child(1) {
