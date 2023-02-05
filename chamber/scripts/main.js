@@ -100,12 +100,12 @@ document.querySelector('#currentYear').innerHTML = `&copy;${year} Londrina's Cha
 
 const dayOfWeek = date.getDay();
 
-const div = document.querySelector('.banner-meeting');
+const banner = document.querySelector('.banner-meeting');
 
-if (dayOfWeek === 1 || dayOfWeek === 6) {
-    div.style.display = "block";
+if (dayOfWeek === 1 || dayOfWeek === 2) {
+    banner.style.display = "block";
 } else {
-    div.style.display = "none";
+    banner.style.display = "none";
 }
 
 // const banner = document.querySelector('.banner-meeting');
@@ -119,8 +119,6 @@ if (dayOfWeek === 1 || dayOfWeek === 6) {
 //     }
 //     isHighlighted = !isHighlighted;
 // }, 500);
-
-const banner = document.querySelector('.banner-meeting');
 
 // let opacity = 1;
 // const fadeInOut = setInterval(() => {
