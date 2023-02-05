@@ -97,3 +97,50 @@ console.log(year);
 
 
 document.querySelector('#currentYear').innerHTML = `&copy;${year} Londrina's Chamber of Commerce | Otavio Silva <br> WDD 230 Project `
+
+const dayOfWeek = date.getDay();
+
+const div = document.querySelector('.banner-meeting');
+
+if (dayOfWeek === 1 || dayOfWeek === 6) {
+    div.style.display = "block";
+} else {
+    div.style.display = "none";
+}
+
+// const banner = document.querySelector('.banner-meeting');
+
+// let isHighlighted = false;
+// setInterval(() => {
+//     if (isHighlighted) {
+//         banner.style.backgroundColor = "transparent";
+//     } else {
+//         banner.style.backgroundColor = "#0090C1";
+//     }
+//     isHighlighted = !isHighlighted;
+// }, 500);
+
+const banner = document.querySelector('.banner-meeting');
+
+// let opacity = 1;
+// const fadeInOut = setInterval(() => {
+//     banner.style.opacity = opacity;
+//     opacity = opacity === 1 ? 0.5 : 1;
+// }, 500);
+
+let opacity = 0;
+let fadeIn = true;
+setInterval(() => {
+    if (fadeIn) {
+        opacity += 0.1;
+        if (opacity >= 1) {
+            fadeIn = false;
+        }
+    } else {
+        opacity -= 0.1;
+        if (opacity <= 0) {
+            fadeIn = true;
+        }
+    }
+    banner.style.opacity = opacity;
+}, 100);

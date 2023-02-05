@@ -49,6 +49,9 @@
         margin-top: -120px;
         height: 90%;
     }
+    .weather-status {
+        margin-right: 5px !important;
+    }
     .event {
         margin-top: -120px;
         height: 88%;
