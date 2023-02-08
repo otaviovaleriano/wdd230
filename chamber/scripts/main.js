@@ -142,3 +142,16 @@ setInterval(() => {
     }
     banner.style.opacity = opacity;
 }, 100);
+
+// windchill calculation
+
+const temp = document.querySelector('.t').textContent;
+const windSpeed = document.querySelector('.ws').textContent;
+
+let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16)));
+
+console.log(chill)
+
+if (temp <= 50 && windSpeed >= 3) {
+    let windChill = document.querySelector('.wc').textContent = chill
+}
