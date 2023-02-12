@@ -98,6 +98,7 @@
         /* padding: auto; */
         position: relative;
         /* z-index: -1; */
+        max-width: 1500px !important;
     }
     .hero h5 {
         position: absolute;

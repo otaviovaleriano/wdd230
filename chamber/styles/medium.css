@@ -22,6 +22,7 @@
     }
     .hero img {
         height: 310px;
+        max-width: 900px !important;
     }
     .joinBtn {
         background-color: #0090C1;

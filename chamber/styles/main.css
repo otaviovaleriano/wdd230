@@ -159,6 +159,7 @@ main section {
 .hero img {
     overflow: hidden;
     width: 100%;
+    max-width: 575px;
     height: 310px;
     object-fit: cover;
     margin-bottom: -5px;
