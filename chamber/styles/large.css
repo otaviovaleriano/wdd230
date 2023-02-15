@@ -170,4 +170,20 @@
     .endFooter {
         text-align: center;
     }
+    #discover {
+        max-width: 1300px !important;
+        flex-wrap: wrap;
+    }
+    picture img {
+        margin: 50px;
+        padding-left: 20px;
+        gap: 5px;
+        width: 300px;
+        height: 300px;
+    }
+    picture p {
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 10px;
+    }
 }

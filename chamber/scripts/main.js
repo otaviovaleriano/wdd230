@@ -46,7 +46,7 @@ function reportWindowSize() {
         navDiv.appendChild(navBar);
 
         const a1 = document.createElement('a');
-        a1.setAttribute("href", "#");
+        a1.setAttribute("href", "../chamber/discover.html");
         a1.textContent = "Discover";
         navBar.appendChild(a1);
 
@@ -155,3 +155,44 @@ console.log(chill)
 if (temp <= 50 && windSpeed >= 3) {
     let windChill = document.querySelector('.wc').textContent = chill
 }
+
+
+
+// Discover Page - images loading 
+// const images = document.querySelectorAll('[data-src]');
+
+// const optionsImg = { threshold: .8, rootMargin: '0px 0px 200px 0px' };
+
+// function preloadImage(img) {
+//     const source = img.getAttribute('data-src');
+//     if (!source) {
+//         return;
+//     }
+//     img.src = source;
+// }
+// const io = new IntersectionObserver(
+//     (entries) => {
+//         entries.forEach(entry => {
+//             if (!entry.isIntersecting) {
+//                 return;
+//             } else {
+//                 preloadImage(entry.target);
+//                 io.unobserve(entry.target);
+//             }
+//             console.log(entries);
+//         })
+
+//     }, optionsImg
+// );
+
+
+// images.forEach(img => {
+//     io.observe(img);
+// });
+
+
+/* local storage activity */
+
+localStorage.setItem('name', 'Julie Anderson - Permanent');
+
+sessionStorage.setItem('class', 'WDD 230 - Not Permanent');

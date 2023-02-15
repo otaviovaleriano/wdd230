@@ -355,3 +355,20 @@ footer div p {
 .endFooter {
     text-align: center;
 }
+
+
+/* Discover page */
+
+picture img {
+    display: flex !important;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#days {
+    text-align: center;
+}
+
+#discover {
+    display: flex;
+}
