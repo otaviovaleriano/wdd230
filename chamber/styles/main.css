@@ -364,13 +364,22 @@ footer div p {
 }
 
 #discover {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
+    margin: 0 auto !important;
+    padding: 5px;
 }
 
 #discover picture img {
     display: flex !important;
     margin: 0 auto !important;
     padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #14a1cfad;
+    width: 300px;
+    height: 300px;
+}
+
+#discover picture p {
+    font-weight: bold;
+    font-size: 20px;
 }

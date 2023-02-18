@@ -38,7 +38,7 @@ hamburger.addEventListener('click', () => {
 });
 
 function reportWindowSize() {
-    if (window.innerWidth >= 940 && !(document.querySelector('.navContainer').classList.contains('on'))) {
+    if (window.innerWidth >= 900 && !(document.querySelector('.navContainer').classList.contains('on'))) {
         document.querySelector('.navContainer').classList.toggle('on');
         document.querySelector('.navContainer').classList.toggle('large');
         const navDiv = document.querySelector('.navContainer');
