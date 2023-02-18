@@ -175,6 +175,9 @@
         flex-wrap: wrap !important;
         max-height: 1050px !important;
     }
+    #days {
+        margin-top: -150px !important;
+    }
     #discover picture img {
         margin: 50px !important;
         /* padding-left: 20px; */

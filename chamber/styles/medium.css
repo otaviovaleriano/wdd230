@@ -83,7 +83,7 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* margin-top: -140px; */
+        margin-top: -20px;
     }
     footer img {
         padding-left: 10px;
@@ -114,7 +114,8 @@
     }
     /* discover page */
     #days {
-        margin-top: -150px !important;
+        margin-top: -200px !important;
+        margin-bottom: 50px;
     }
     picture p {
         text-align: center;
