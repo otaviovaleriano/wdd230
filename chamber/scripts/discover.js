@@ -32,11 +32,12 @@ images.forEach(img => {
 if (localStorage.getItem('lastVisit')) {
     // If it exists, get the timestamp and display the last visit date and time
     let lastVisit = new Date(parseInt(localStorage.getItem('lastVisit')));
-    let messageElement = document.getElementById('days');
-    messageElement.innerHTML = 'Welcome back! Your last visit was on ' + lastVisit.toLocaleString();
+    let messageElement = document.getElementById('diff');
+    let daysSinceLastVisit = Math.round((new Date() - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
+    messageElement.innerHTML = daysSinceLastVisit;
 } else {
     // If it doesn't exist, set the timestamp to the current time and display the welcome message
     localStorage.setItem('lastVisit', Date.now().toString());
     let messageElement = document.getElementById('days');
-    messageElement.innerHTML = 'Welcome! This is your first visit to the page.';
+    messageElement.innerHTML = 'Welcome!!!';
 }
