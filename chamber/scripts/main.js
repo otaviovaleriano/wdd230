@@ -102,7 +102,7 @@ const dayOfWeek = date.getDay();
 
 const banner = document.querySelector('.banner-meeting');
 
-if (dayOfWeek === 1 || dayOfWeek === 2) {
+if (window.location.pathname === '/index.html' && (dayOfWeek === 1 || dayOfWeek === 6)) {
     banner.style.display = "block";
 } else {
     banner.style.display = "none";
