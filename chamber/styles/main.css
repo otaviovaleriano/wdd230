@@ -359,16 +359,16 @@ footer div p {
 
 /* Discover page */
 
-picture img {
-    display: flex !important;
-    margin: 0 auto;
-    padding: 5px;
-}
-
 #days {
     text-align: center;
 }
 
 #discover {
     display: flex;
+}
+
+#discover picture img {
+    display: flex !important;
+    margin: 0 auto;
+    padding: 5px;
 }
