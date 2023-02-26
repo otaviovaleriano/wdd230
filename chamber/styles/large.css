@@ -222,11 +222,11 @@
     input[type='submit'] {
         margin: 0 0 2rem 8% !important;
     }
-    .membership {
-        /* margin-left: 300px; */
-        /* display: block !important */
-        /* flex-direction: row !important; */
-    }
+    /* .membership {
+        margin-left: 300px;
+        display: block !important;
+        flex-direction: row !important;
+    } */
     .form-container {
         width: 50%;
     }
