@@ -222,6 +222,9 @@
     input[type='submit'] {
         margin: 0 0 2rem 8% !important;
     }
+    input[type='submit']:hover {
+        color: white;
+    }
     /* .membership {
         margin-left: 300px;
         display: block !important;
