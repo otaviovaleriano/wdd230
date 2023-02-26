@@ -213,4 +213,24 @@
         transform: translate(20px, 20px);
         transition: .5s ease;
     }
+    /* JOin Page */
+    #join {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    input[type='submit'] {
+        margin: 0 0 2rem 8% !important;
+    }
+    .membership {
+        /* margin-left: 300px; */
+        /* display: block !important */
+        /* flex-direction: row !important; */
+    }
+    .form-container {
+        width: 50%;
+    }
+    .membership-container {
+        width: 50%;
+    }
 }

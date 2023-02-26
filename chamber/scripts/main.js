@@ -11,6 +11,11 @@ hamburger.addEventListener('click', () => {
         const navBar = document.createElement('nav');
         navDiv.appendChild(navBar);
 
+        const a0 = document.createElement('a');
+        a0.setAttribute("href", "../chamber/");
+        a0.textContent = "Home";
+        navBar.appendChild(a0);
+
         const a1 = document.createElement('a');
         a1.setAttribute("href", "#");
         a1.textContent = "Discover";
@@ -45,6 +50,11 @@ function reportWindowSize() {
         const navBar = document.createElement('nav');
         navDiv.appendChild(navBar);
 
+        const a0 = document.createElement('a');
+        a0.setAttribute("href", "../chamber/");
+        a0.textContent = "Home";
+        navBar.appendChild(a0);
+
         const a1 = document.createElement('a');
         a1.setAttribute("href", "../chamber/discover.html");
         a1.textContent = "Discover";
@@ -56,7 +66,7 @@ function reportWindowSize() {
         navBar.appendChild(a2);
 
         const a3 = document.createElement('a');
-        a3.setAttribute("href", "#");
+        a3.setAttribute("href", "../chamber/join.html");
         a3.textContent = "Join";
         navBar.appendChild(a3);
 
@@ -100,13 +110,13 @@ document.querySelector('#currentYear').innerHTML = `&copy;${year} Londrina's Cha
 
 const dayOfWeek = date.getDay();
 
-const banner = document.querySelector('.banner-meeting');
+// const banner = document.querySelector('.banner-meeting');
 
-if (dayOfWeek === 1 || dayOfWeek === 2) {
-    banner.style.display = "block";
-} else {
-    banner.style.display = "none";
-}
+// if (dayOfWeek === 1 || dayOfWeek === 2) {
+//     banner.style.display = "block";
+// } else {
+//     banner.style.display = "none";
+// }
 
 // const banner = document.querySelector('.banner-meeting');
 
@@ -126,35 +136,35 @@ if (dayOfWeek === 1 || dayOfWeek === 2) {
 //     opacity = opacity === 1 ? 0.5 : 1;
 // }, 500);
 
-let opacity = 0;
-let fadeIn = true;
-setInterval(() => {
-    if (fadeIn) {
-        opacity += 0.1;
-        if (opacity >= 1) {
-            fadeIn = false;
-        }
-    } else {
-        opacity -= 0.1;
-        if (opacity <= 0) {
-            fadeIn = true;
-        }
-    }
-    banner.style.opacity = opacity;
-}, 100);
+// let opacity = 0;
+// let fadeIn = true;
+// setInterval(() => {
+//     if (fadeIn) {
+//         opacity += 0.1;
+//         if (opacity >= 1) {
+//             fadeIn = false;
+//         }
+//     } else {
+//         opacity -= 0.1;
+//         if (opacity <= 0) {
+//             fadeIn = true;
+//         }
+//     }
+//     banner.style.opacity = opacity;
+// }, 100);
 
 // windchill calculation
 
-const temp = document.querySelector('.t').textContent;
-const windSpeed = document.querySelector('.ws').textContent;
+// const temp = document.querySelector('.t').textContent;
+// const windSpeed = document.querySelector('.ws').textContent;
 
-let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16)));
+// let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16)));
 
-console.log(chill)
+// console.log(chill)
 
-if (temp <= 50 && windSpeed >= 3) {
-    let windChill = document.querySelector('.wc').textContent = chill
-}
+// if (temp <= 50 && windSpeed >= 3) {
+//     let windChill = document.querySelector('.wc').textContent = chill
+// }
 
 
 
@@ -192,7 +202,3 @@ if (temp <= 50 && windSpeed >= 3) {
 
 
 /* local storage activity */
-
-localStorage.setItem('name', 'Julie Anderson - Permanent');
-
-sessionStorage.setItem('class', 'WDD 230 - Not Permanent');

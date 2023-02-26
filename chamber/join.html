@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Londrina's Chamber of Commerce Webpage - website to get informed about different things in town.">
+    <title>Home Page - Londrina's Chamber of Commerce</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo-web.webp" alt="logo" />
+            <p>Londrina's Chamber <br> of Commerce</p>
+        </div>
+        <div id="iconsSideHeader">
+            <div class="socialMediaIcons">
+                <a href="https://www.facebook.com/prefeituradelondrina/?locale=pt_BR" target="_blank"><img src="images/fb-icon.png" alt="Facebook" /></a>
+                <a href="https://www.linkedin.com/company/grande-londrina/about/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+            </div>
+            <a class="ham" href="#">&#9776;</a>
+        </div>
+        <div class="navContainer">
+        </div>
+        <p class="date"></p>
+    </header>
+
+    <h1 id="joinHeading">Join Our Chamber</h1>
+    <main id="join">
+        <div class="form-container">
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name *:</label>
+                <input type="text" name="firstname" id="fname" required>
+
+                <label for="lname">Last Name *:</label>
+                <input type="text" name="lastname" id="lname" required>
+
+                <label for="title">Business Position Title</label>
+                <input type="text" name="biztitle" id="title" pattern="[A-Za-z -]+" minlength="7" required>
+
+                <label for="email">E-mail *:</label>
+                <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+
+                <label for="phone">Cell Phone *:</label>
+                <input type="tel" name="phone" id="phone" placeholder="385-370-3536" required>
+
+                <label for="business">Business Name *:</label>
+                <input type="text" name="bizname" id="business" required>
+
+                <label id="member">Enter your Level of Membership </label>
+
+                <div id="radio">
+                    <input type="radio" name="mlevel" value="level1" id="one">
+                    <label for="one"> Level 1</label>
+
+                    <input type="radio" name="mlevel" value="level2" id="two">
+                    <label for="two"> Level 2</label>
+
+                    <input type="radio" name="mlevel" value="level3" id="three">
+                    <label for="three"> Level 3</label>
+
+                    <input type="radio" name="mlevel" value="level4" id="four">
+                    <label for="four"> Level 4</label>
+                </div>
+
+                <label for="message">Business Description</label>
+                <textarea name="description" id="message"></textarea>
+
+                <input id="dateToday" type="hidden" name="todaydate">
+
+                <input type="submit" value="Join the Chamber">
+            </form>
+        </div>
+
+        <div class="membership-container">
+            <div class="membership">
+                <h2>Membership levels benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non profit organizations and there is no fee</li>
+                </ul>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>15% discount on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50/month</li>
+                </ul>
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $250/month</li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div>
+            <img src="images/logo-web.webp" alt="logo image" />
+            <p>
+                <strong>Londrina's Chamber of Commerce</strong>
+                <br />Londrina, Parana - Brazil
+            </p>
+        </div>
+        <div>
+            <p>londrinacommerce.com</p>
+            <p>+55 (043) 99844-3514</p>
+            <div>
+                <a href="https://goo.gl/maps/eebNdgpfaMM6xLg19" target="_blank"><i class="material-icons">&#xe55e;</i></a>
+                <p>Find Us Here</p>
+            </div>
+        </div>
+        <div class="endFooter">
+            <p id="currentYear">
+                <p id="lastModified"></p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
