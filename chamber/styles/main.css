@@ -503,3 +503,37 @@ h3 {
     color: #0090C1;
     font-size: 5rem;
 }
+
+
+/* Directory Page */
+
+#cards,
+#list {
+    border: 3px solid black;
+    padding: 0 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 3px #ccc;
+    color: blue;
+}
+
+#view {
+    text-align: center;
+    font-size: 2em;
+}
+
+#directory .cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    /* background-color: black; */
+}
+
+#directory .cards section {
+    border: 1px solid navy;
+    background-color: black;
+    padding: 30px;
+    width: 300px;
+    margin: 20px;
+}

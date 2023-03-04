@@ -5,7 +5,7 @@ async function getProphetData() {
     console.log(response)
     const data = await response.json();
     console.table(data.prophets); // note that we reference the prophet array of the data object given the structure of the json file
-    displayProphets(data.prophets);
+    displayTable(data.prophets);
 }
 
 getProphetData();
@@ -42,3 +42,31 @@ const displayProphets = (prophets) => {
             } // end of forEach loop
         )
     } // end of function expression
+
+function displayTable(prophets) {
+    // let row = document.querySelectorAll('tr');
+    // row.forEach((item) => {
+    //     item.remove();
+    // })
+    // let section = document.querySelectorAll('section');
+    // section.forEach((item) => {
+    //     item.remove();
+    // }) option to start the selection of list or cards on the page
+    prophets.forEach((prophet) => {
+        let tr = document.createElement('tr');
+        let td_name = document.createElement('td');
+        let td_birthplace = document.createElement('td');
+        let td_birthdate = document.createElement('td');
+
+        td_name.textContent = `${prophet.name} ${prophet.lastname}`;
+        td_birthplace.textContent = prophet.birthplace;
+        td_birthdate.textContent = prophet.birthdate;
+
+        tr.appendChild(td_name);
+        tr.appendChild(td_birthplace);
+        tr.appendChild(td_birthdate);
+
+        document.querySelector('table').appendChild(tr);
+
+    })
+}
