@@ -517,7 +517,7 @@ h3 {
 
 #cards,
 #list {
-    border: #0090C1 3px solid;
+    border: #0090C1 5px solid;
 }
 
 .cards {
@@ -595,7 +595,7 @@ h3 {
 table {
     width: 90%;
     margin: 50px auto;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
 }
 
