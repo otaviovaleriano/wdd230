@@ -112,27 +112,20 @@ function createTable(data) {
     })
 }
 
+const cardsContainer = document.querySelector('.cards');
+const table = document.querySelector('table');
 
-// function createTable(data) {
-//     // Get the HTML table element
-//     var table = document.querySelector('table');
+// Show cards by default
+cardsContainer.style.display = 'flex';
+table.style.display = 'none';
 
-//     // Create the table header row
-//     var header = table.createTHead();
-//     var headerRow = header.insertRow(0);
-//     var headers = Object.keys(data[0]);
-//     for (var i = 0; i < headers.length; i++) {
-//         var headerCell = headerRow.insertCell(i);
-//         headerCell.textContent = headers[i];
-//     }
+// Add event listener to view icons
+document.querySelector('#cards').addEventListener('click', function() {
+    cardsContainer.style.display = 'flex';
+    table.style.display = 'none';
+});
 
-//     // Create the table body rows
-//     var body = table.createTBody();
-//     for (var i = 0; i < data.length; i++) {
-//         var row = body.insertRow(i);
-//         for (var j = 0; j < headers.length; j++) {
-//             var cell = row.insertCell(j);
-//             cell.textContent = data[i][headers[j]];
-//         }
-//     }
-// }
+document.querySelector('#list').addEventListener('click', function() {
+    cardsContainer.style.display = 'none';
+    table.style.display = 'table';
+});
