@@ -4,7 +4,7 @@
             "address": "Rua Para, 450",
             "phone": "(43) 3356-7982",
             "web-url": "https://www.camelodromodelondrina.com.br/",
-            "image": "images/camelo-londrina.jpg",
+            "image": "images/camelo-londrina.webp",
             "membership": "Bronze",
             "owner": "Municipio de Londrina"
         },
@@ -13,7 +13,7 @@
             "address": "Rua Sergipe, 200",
             "phone": "(43) 3356-8982",
             "web-url": "https://www.instagram.com/vitaminadasergipe/",
-            "image": "images/vitamina-sergipe.jpg",
+            "image": "images/vitamina-sergipe.webp",
             "membership": "Gold",
             "owner": "Seu José"
         },
@@ -22,7 +22,7 @@
             "address": "Avenida Theodoro Victorelli , 150",
             "phone": "(43) 3375-4951",
             "web-url": "https://boulevardlondrinashopping.com.br/",
-            "image": "images/boulevard-londrina.jpg",
+            "image": "images/boulevard-londrina.webp",
             "membership": "Gold",
             "owner": "Chinese Corp Group"
         },
@@ -31,7 +31,7 @@
             "address": "Calçadão, 2500",
             "phone": "(43) 3355-8578",
             "web-url": "https://www.magazineluiza.com.br/",
-            "image": "images/magazine-londrina.jpg",
+            "image": "images/magazine-londrina.webp",
             "membership": "Silver",
             "owner": "Magalu Corp"
         },
@@ -40,7 +40,7 @@
             "address": "Rua Pio XII, 230",
             "phone": "(43) 3029-9447",
             "web-url": "https://chiquinho.com.br/",
-            "image": "images/chiquinho-londrina.jpg",
+            "image": "images/chiquinho-londrina.webp",
             "membership": "Bronze",
             "owner": "Chiquinho Corp"
         },
@@ -49,7 +49,7 @@
             "address": "Rua Andirá, 37",
             "phone": "(43) 3323-1516",
             "web-url": "https://www.facebook.com/kdoismangapoint/",
-            "image": "images/k2-londrina.jpg",
+            "image": "images/k2-londrina.webp",
             "membership": "Silver",
             "owner": "Lord Tcheco"
         },
@@ -58,7 +58,7 @@
             "address": "Rua Angelina Ricci Vezozzo, 85",
             "phone": "(43) 3325-4128",
             "web-url": "https://epesmel.org.br/",
-            "image": "images/epesmel-londrina.jpg",
+            "image": "images/epesmel-londrina.webp",
             "membership": "NP",
             "owner": "Padres Murialdo"
         },
@@ -67,7 +67,7 @@
             "address": "Rua Governador Valadares, 350",
             "phone": "(43) 33328-3185",
             "web-url": "https://www.facebook.com/CapituloLondrina136/?locale=pt_BR",
-            "image": "images/demolay-londrina.jpg",
+            "image": "images/demolay-londrina.webp",
             "membership": "NP",
             "owner": "Maçonaria Londrina"
         },
@@ -76,7 +76,7 @@
             "address": "Avenida Bandeirantes, 55",
             "phone": "(43) 3339-9898",
             "web-url": "http://www.arnaldos.com.br/",
-            "image": "images/arnaldos-londrina.jpg",
+            "image": "images/arnaldos-londrina.webp",
             "membership": "Gold",
             "owner": "Municipio de Londrina"
         }
