@@ -17,17 +17,17 @@ hamburger.addEventListener('click', () => {
         navBar.appendChild(a0);
 
         const a1 = document.createElement('a');
-        a1.setAttribute("href", "#");
+        a1.setAttribute("href", "../chamber/discover.html");
         a1.textContent = "Discover";
         navBar.appendChild(a1);
 
         const a2 = document.createElement('a');
-        a2.setAttribute("href", "#");
+        a2.setAttribute("href", "../chamber/directory.html");
         a2.textContent = "Directory";
         navBar.appendChild(a2);
 
         const a3 = document.createElement('a');
-        a3.setAttribute("href", "#");
+        a3.setAttribute("href", "../chamber/join.html");
         a3.textContent = "Join";
         navBar.appendChild(a3);
 
@@ -61,7 +61,7 @@ function reportWindowSize() {
         navBar.appendChild(a1);
 
         const a2 = document.createElement('a');
-        a2.setAttribute("href", "#");
+        a2.setAttribute("href", "../chamber/directory.html");
         a2.textContent = "Directory";
         navBar.appendChild(a2);
 
