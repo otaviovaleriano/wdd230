@@ -44,6 +44,7 @@ function createCard(business) {
 
     const image = document.createElement('img');
     image.src = business.image;
+    image.alt = business.name;
     card.appendChild(image);
 
     const body = document.createElement('div');
