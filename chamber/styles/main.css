@@ -140,11 +140,11 @@ header div p {
     font-family: Hind Vadodara, sans-serif;
 }
 
-main section p span button {
+#home section p span button {
     font-family: Hind Vadodara, sans-serif;
 }
 
-main section {
+#home section {
     background-color: #25a1ca2a;
     border: 2px solid black;
     margin: 5px;
@@ -295,7 +295,7 @@ main section {
     height: auto
 }
 
-main section div {
+#home section div {
     border: 1px solid black;
     height: 140px;
     margin: 5px 0px 5px 0 !important;
@@ -309,23 +309,23 @@ main section div {
     margin-right: 8px;
 }
 
-main section div h2 {
+#home section div h2 {
     text-shadow: 3px 2px rgba(0, 0, 0, 0.259);
 }
 
-main section div:nth-child(1) {
+#home section div:nth-child(1) {
     margin: 10px 5px 0px 5px;
 }
 
-main section div:nth-child(2) {
+#home section div:nth-child(2) {
     margin: 0px 5px 10px 5px;
 }
 
-main section div:nth-child(3) {
+#home section div:nth-child(3) {
     display: none;
 }
 
-main section p {
+#home section p {
     margin-top: 8px;
     margin-left: 8px;
 }
@@ -367,10 +367,10 @@ footer div p {
     text-align: center;
     margin: 0 auto !important;
     padding: 5px;
+    display: block;
 }
 
 #discover picture img {
-    display: flex !important;
     margin: 0 auto !important;
     padding: 5px;
     border-radius: 20px;
@@ -507,33 +507,99 @@ h3 {
 
 /* Directory Page */
 
-#cards,
-#list {
-    border: 3px solid black;
-    padding: 0 8px;
-    cursor: pointer;
-    box-shadow: 3px 3px 10px 3px #ccc;
-    color: blue;
-}
-
 #view {
     text-align: center;
-    font-size: 2em;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: 30px;
 }
 
-#directory .cards {
+.cards {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
-    color: white;
-    /* background-color: black; */
+    align-items: center;
 }
 
-#directory .cards section {
-    border: 1px solid navy;
-    background-color: black;
-    padding: 30px;
-    width: 300px;
-    margin: 20px;
+.card {
+    width: 410px;
+    height: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    /* padding: 10px; */
+    margin: 10px;
+}
+
+.card img {
+    width: 80%;
+    height: 70%;
+    max-height: 200px;
+    /* object-fit: cover; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+.card p {
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.card-body {
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-link {
+    font-size: 16px;
+    color: rgb(6, 6, 7);
+    /* text-decoration: underline; */
+    cursor: pointer;
+    text-align: center;
+}
+
+table {
+    width: 75%;
+    margin: 50px auto;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+    display: block;
+    /* for larger view use display: table-cell */
+}
+
+tr:nth-of-type(even) {
+    background-color: #ccc;
 }
