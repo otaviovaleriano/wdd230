@@ -42,10 +42,33 @@ function createCard(business) {
     const card = document.createElement('div');
     card.classList.add('card');
 
-    const image = document.createElement('img');
-    image.src = business.image;
-    image.alt = business.name;
-    card.appendChild(image);
+    // const image = document.createElement('img');
+    // image.src = business.image;
+    // image.alt = business.name;
+    // card.appendChild(image);
+
+    // Add an image placeholder element
+    const placeholder = document.createElement('div');
+    placeholder.classList.add('card-image-placeholder');
+    card.appendChild(placeholder);
+
+    // Add an intersection observer for the image
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Load the image and remove the placeholder
+                const image = new Image();
+                image.src = business.image;
+                image.alt = business.name;
+                image.classList.add('card-image');
+                image.addEventListener('load', () => {
+                    placeholder.replaceWith(image);
+                });
+                io.disconnect();
+            }
+        });
+    });
+    io.observe(placeholder);
 
     const body = document.createElement('div');
     body.classList.add('card-body');
