@@ -110,25 +110,25 @@ document.querySelector('#currentYear').innerHTML = `&copy;${year} Londrina's Cha
 
 const dayOfWeek = date.getDay();
 
+const banner = document.querySelector('.banner-meeting');
+
+if (dayOfWeek === 1 || dayOfWeek === 6) {
+    banner.style.display = "block";
+} else {
+    banner.style.display = "none";
+}
+
 // const banner = document.querySelector('.banner-meeting');
 
-// if (dayOfWeek === 1 || dayOfWeek === 2) {
-//     banner.style.display = "block";
-// } else {
-//     banner.style.display = "none";
-// }
-
-// const banner = document.querySelector('.banner-meeting');
-
-// let isHighlighted = false;
-// setInterval(() => {
-//     if (isHighlighted) {
-//         banner.style.backgroundColor = "transparent";
-//     } else {
-//         banner.style.backgroundColor = "#0090C1";
-//     }
-//     isHighlighted = !isHighlighted;
-// }, 500);
+let isHighlighted = false;
+setInterval(() => {
+    if (isHighlighted) {
+        banner.style.backgroundColor = "transparent";
+    } else {
+        banner.style.backgroundColor = "#0090C1";
+    }
+    isHighlighted = !isHighlighted;
+}, 500);
 
 // let opacity = 1;
 // const fadeInOut = setInterval(() => {
@@ -136,22 +136,22 @@ const dayOfWeek = date.getDay();
 //     opacity = opacity === 1 ? 0.5 : 1;
 // }, 500);
 
-// let opacity = 0;
-// let fadeIn = true;
-// setInterval(() => {
-//     if (fadeIn) {
-//         opacity += 0.1;
-//         if (opacity >= 1) {
-//             fadeIn = false;
-//         }
-//     } else {
-//         opacity -= 0.1;
-//         if (opacity <= 0) {
-//             fadeIn = true;
-//         }
-//     }
-//     banner.style.opacity = opacity;
-// }, 100);
+let opacity = 0;
+let fadeIn = true;
+setInterval(() => {
+    if (fadeIn) {
+        opacity += 0.1;
+        if (opacity >= 1) {
+            fadeIn = false;
+        }
+    } else {
+        opacity -= 0.1;
+        if (opacity <= 0) {
+            fadeIn = true;
+        }
+    }
+    banner.style.opacity = opacity;
+}, 100);
 
 // windchill calculation
 
