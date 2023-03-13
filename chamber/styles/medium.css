@@ -21,7 +21,7 @@
         position: relative;
     }
     .hero img {
-        height: 310px;
+        height: 320px;
         max-width: 900px !important;
     }
     .joinBtn {
@@ -47,14 +47,16 @@
     .weather {
         max-width: 100%;
         margin: 5px;
-        margin-top: -120px;
+        margin-top: -127px !important;
         height: 90%;
     }
-    .weather-status {
-        margin-right: 5px !important;
+    .weather #weather_status {
+        max-width: 50% !important;
+        border-bottom: 2px solid #0090C1;
+        margin-left: 100px !important;
     }
     .event {
-        margin-top: -120px;
+        margin-top: -127px !important;
         height: 88%;
     }
     #home .newRelease {
@@ -83,7 +85,7 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: -20px;
+        margin-top: -145px !important;
     }
     footer img {
         padding-left: 10px;

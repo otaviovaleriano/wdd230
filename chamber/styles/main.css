@@ -237,6 +237,12 @@ header div p {
     font-size: 1.5rem;
     border-bottom: 2px solid black;
     margin: 0px 5px 0px 5px !important;
+    max-width: 50% !important;
+    margin-left: 130px !important;
+}
+
+#border {
+    border-top: 2px solid black;
 }
 
 #weather_icon {
